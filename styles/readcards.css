@@ -148,6 +148,14 @@ a.topics_button {
     cursor: pointer;
     padding: 0.5rem 1rem;
 }
+/* ----------------------- */
+.complemento-bottom-card{
+    display: flex;
+    flex-direction: column;
+}
+.complemento-bottom-card > a,p{
+    text-align: center;
+}
 
 @media (max-width: 950px) {
     div.readcards_container {

@@ -7,6 +7,7 @@ const app = initializeApp(firebaseConfig);
 
 //Create a root reference
 const storage = getStorage(app);
+const storageRef = ref(storage);
 
 // traer elemnto input, file con el dom  
 let inputImageCard = document.querySelector("#imageCard");

@@ -61,7 +61,7 @@ div.card_decoration{
     left: -0.8rem;
 }
 .circle_bottom{
-    left: 11.4rem;
+    left: 12rem;
 }
 
   .decoration_line{
@@ -72,9 +72,13 @@ div.card_decoration{
     z-index: 1;
   }
 /*----*/
-.decoration-top{}
+.decoration-top{
+    width: 225px;
+}
 
-.decoration-bottom{}
+.decoration-bottom{
+    width: 225px;
+}
 
 div.card_text{
     height: 50%;
@@ -92,4 +96,11 @@ div.card_like{
 }
 div.card_like>img{
     width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .circle_bottom{
+        left: 11.4rem;
+    }
+    
 }

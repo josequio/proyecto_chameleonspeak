@@ -2,7 +2,7 @@ import './creatorForm.js'
 /* import '../hamburguer.js' */
 /* import './storageimg.js'; */
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js';
-import { getFirestore, addDoc, getDocs, collection, onSnapshot, serverTimestamp, orderBy, query } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js';
+import { getFirestore, addDoc, getDocs, collection, onSnapshot, serverTimestamp, orderBy, query,doc,deleteDoc} from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js';
 
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"
 /* import './script/firebase.js'; */
@@ -31,6 +31,7 @@ let inputTextareaCard = document.querySelector("#textareaCard");
 let inputColorCard = document.querySelector("#colorCard");
 let inputWordsCard = document.querySelector("#wordsCard");
 let inputTraductionWord = document.querySelector("#TraductionWord");
+let btnDeleteDoc = document.getElementById("btnDeleteDoc");
 
 
 formCreator.addEventListener("submit", function (ev){
@@ -83,5 +84,12 @@ onSnapshot(queryCards, function (querySnapshot) {
     });
 
 });
+
+/*   button de delete de documento, falta implementar
+             <div style = "text-align: center">
+               <button class="btn_blue" id="btnDeleteDoc" style = "background-color: red; color:white; padding:0.3rem 1rem">Delete</button>
+              </div>
+*/
+
 
 

@@ -74,7 +74,7 @@ onSnapshot(queryCards, function (querySnapshot) {
                <img src="/images/icons/pulgar-arriba.png" alt="">
             </div>
         </div>
-        <div style = "display:flex; flex-direction:column; aling-items:center; justify-content:center;">
+        <div class = "complemento-bottom-card">
             <a class = "topics_button btn_blue style_a" href="#readcards">Listo para un reto!</a>
             <p>Puedes dejar tu respuesta aqui:</p>
             <a class = "topics_button style_a" href="https://www.facebook.com/profile.php?  id=100089940139227"><img src="/images/icons/face.png" alt=""></a>
