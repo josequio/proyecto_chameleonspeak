@@ -1,1 +1,1 @@
-export const firestore_api_key = 'AIzaSyA-kebZ9p7eECp94y3TluyZo6qO4h-CaHc';
+export const firestore_api_key = 'AIzaSyA3-2O6IGlazlyoDqLME8TTEUhIGoLw7TM';

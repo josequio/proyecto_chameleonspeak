@@ -41,6 +41,7 @@
          <a href="#" id="logout" class=" logout style_a btn_white activo disp_login">Logout</a>
       </div>
    </header>
+   <!-- ----------formulario creador de cards------------- -->
    <section class="maker">
       <div class="maker_card">
          <h2>Creador</h2>
@@ -50,7 +51,7 @@
             <label for="titleCard">Ingresa el título de la card:</label>
             <input type="text" name="titleCard" id="titleCard" class="input-desing" required>
             <label for="textareaCard">Ingresa el contenido de la card:</label>
-            <textarea id="textareaCard" name="textareaCard" rows="4" cols="50" required></textarea>
+            <textarea id="textareaCard" name="textareaCard" rows="4" cols="50" required wrap="soft"></textarea>
             <div class="form_marker">
                <label for="wordsCard">Ingresa la palabra o frase a resaltar:</label>
                <fieldset>
@@ -62,36 +63,39 @@
                </fieldset>
             </div>
             <div style="display:flex; justify-content: center; align-items: center; width: 100%;">
-               <button class="btn_blue" style="padding: 0.5rem; cursor: pointer; border: none;">Agrega una
-                  ChameleonCard</button>
+               <button class="btn_blue" style="padding: 0.5rem; cursor: pointer; border: none;">Agrega una ChameleonCard</button>
+              <!--  <button class="btn_orange" style="padding: 0.5rem; cursor: pointer; border: none " onclick="resetearFormulario()" type="button">Resetear</button> -->
             </div>
          </form>
       </div>
-
+      <!-- --------------previsualización------------------ -->
       <div class="maker_previewer">
          <h2>Previsualización</h2>
          <div class="card card-previewer">
-            <div class="card_image">
+            <div class="bg-opacity">
+               <!-- <div class="card_image">
                <img src="/images/logo/icon_logo.png" alt="imagen" id="cardImg">
-            </div>
-            <h2 class="card_title">Lorem ipsum dolor sit</h2>
-            <div class="card_decoration decoration-top">
-               <div class="decoration_circle circle_top"></div>
-               <div class="decoration_line"></div>
-            </div>
-            <div class="card_text">
-               <p id="card_text-p">
-                  Lorem dolor sit amet <span title="consecución" style="cursor:pointer">consectetur</span> adipisicing
-                  elit Laboriosam, magnam sunt! Quae provident cumquemolestiae
-               </p>
-            </div>
+               </div> -->
+               <h2 class="card_title">Lorem ipsum dolor sit</h2>
+               <div class="card_decoration decoration-top">
+                  <div class="decoration_circle circle_top"></div>
+                  <div class="decoration_line"></div>
+               </div>
+               <div class="card_text">
+                  <p id="card_text-p">
+                     Lorem dolor sit amet <span title="consecución" style="cursor:pointer">consectetur</span>
+                     adipisicing
+                     elit Laboriosam, magnam sunt! Quae provident cumquemolestiae
+                  </p>
+               </div>
 
-            <div class="card_decoration decoration-bottom">
-               <div class="decoration_circle circle_bottom"></div>
-               <div class="decoration_line"></div>
-            </div>
-            <div class="card_like">
-               <img src="/images/icons/pulgar-arriba.png" alt="">
+               <div class="card_decoration decoration-bottom">
+                  <div class="decoration_circle circle_bottom"></div>
+                  <div class="decoration_line"></div>
+               </div>
+               <div class="card_like">
+                  <img src="/images/icons/pulgar-arriba.png" alt="">
+               </div>
             </div>
          </div>
       </div>

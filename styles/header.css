@@ -4,6 +4,7 @@
    --colorYellow: hsl(46deg 98% 52%);
    --colorWhite: rgb(255, 255, 255);
    --colorBlack: rgb(0, 0, 0);
+   --colorOrange: rgb(232, 124, 74);
 }
 /* button blue and hover yellow */
 .btn_blue{
@@ -31,6 +32,12 @@
     background-color: var(--colorWhite);
     border-radius: 0.8rem;
     color: var(--colorBlack);
+}
+
+.btn_orange{
+    background-color: var(--colorOrange);
+    border-radius: 0.8rem;
+    color: var(--colorWhite);
 }
 /*----------section separation------------ */
 .divider{

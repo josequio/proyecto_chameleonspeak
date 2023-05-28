@@ -63,6 +63,7 @@ form.form textarea{
     border-radius: 0.3rem;
     border: none;
     padding: 0.2rem;
+    white-space: pre-wrap;
 }
 
 .input-desing{
@@ -86,7 +87,7 @@ div.form_marker>fieldset{
 }
 
 
-/*------------------------------------*/
+/*------------------------previsualización------------*/
 div.maker_previewer{
     width: 50%;
     min-width: 320px;
@@ -104,29 +105,45 @@ div.card{
     height: 500px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     padding: 1rem;
     border-radius: 0.5rem;
     color: rgb(255,255,255);
 }
 
-div.card-previewer{
 
+div.card-previewer{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-div.card_image{
-    /* background-color: #004aad; */
+div.bg-opacity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+    /* el bg-opacity no cubre toda la card por que div.card tien estilo de padding */
+}
+
+
+/* div.card_image{
     width: 5rem;
     height: 5rem;
 }
 div.card_image>img{
     max-width: 100%;
     max-height: 100%;
-}
+} */
 
 h2.card_title{
     font-size: 1rem;
+    margin: 1.5rem 0;
     /* background-color: antiquewhite; */
 }
 /*--*/

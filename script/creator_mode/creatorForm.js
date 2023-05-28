@@ -1,3 +1,4 @@
+const cardPreviewer = document.querySelector(".card-previewer");
 const cardTitle = document.querySelector(".card_title");
 const cardTextP = document.querySelector("#card_text-p");
 const cardImg = document.querySelector("#cardImg");
@@ -23,13 +24,13 @@ inputImageCard.addEventListener('change', function(event) {
 
     reader.onload = function(event) {
       /* const imagePreview = document.getElementById('image-preview'); */
+      
+      cardPreviewer.style.backgroundImage = `url(${event.target.result})`
       cardImg.src = event.target.result;
     };
 
     reader.readAsDataURL(file);
-  }
-
-
+}
 
 
 //Evento para elemento input - titulo del card
@@ -61,3 +62,11 @@ inputTraductionWord.addEventListener('input',function(ev){
     let spanColor = document.querySelector("#spanColor");
     spanColor.setAttribute('title',inputTraductionWord.value);
 });  
+
+
+/* ---------------bton de reseteo----------- */
+
+/* function resetearFormulario(){
+  let formC = document.querySelector(".form");
+  inputTitleCard.reset(); 
+} */
