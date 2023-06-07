@@ -1,9 +1,8 @@
 const disp_logout = document.querySelectorAll('.disp_logout');
 const disp_login= document.querySelectorAll('.disp_login'); 
 
-
-console.log(disp_login)
-console.log(disp_logout) 
+/* console.log(disp_login)
+console.log(disp_logout)  */
 
 export const loginCheck = user => {
     if(user){

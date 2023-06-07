@@ -5,14 +5,15 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="/styles/header.css">
    <link rel="stylesheet" href="/styles/general_card.css">
-   <!-- <link rel="stylesheet" href="/styles/modal.css"> -->
    <link rel="stylesheet" href="/styles/readcards.css">
+   <link rel="stylesheet" href="/styles/modal.css">
    <title>ChameleonSpeak.com</title>
 </head>
 
@@ -21,7 +22,7 @@
       <div class="header_mobile">
          <div class="header_brand">
             <img width="55px" src="/images/logo/icon_logo.png" alt="icono ChameleonSpeak" class="header_brand_img">
-            <a href="/index.html" target="_blank" class="header_brand_name style_a">ChameleonSpeak</a>
+            <a href="/index.html" class="header_brand_name style_a">ChameleonSpeak</a>
          </div>
          <button class="btn_humbg"> <!-- nav hamburguesa -->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="nav_svg"
@@ -37,7 +38,7 @@
             <li class="nav_items" id="speakcards_modal"><a class="style_a" href="">SPEAKCARDS</a></li>
          </ul>
       </nav>
-      <a href="index.html" class="header_btn_access style_a btn_white modal_open activo">Regresar</a>
+      <a href="index.html" class="header_btn_access style_a btn_white modal_open activo">Acceder</a>
    </header>
    <!-- --------------------------------------------section:readcards----------------------- -->
    <section class="readcards" id="readcards">
@@ -45,58 +46,81 @@
       <div class="readcards_container">
          <!-- ------quiz---------- -->
          <div class="readcards_quiz">
-            <form action="#" class="readcards_form">
+            <form action="#" class="readcards_form" id="form_quiz">
                <h2>Answer the cards' questions:</h2>
                <fieldset>
-                  <legend>First Question?</legend>
-                  <label for="opcion1a">
-                     <input type="radio" name="questionOne" id="opcion1a" value="opcion1a">
-                     Opción 1
-                  </label>
-                  <label for="opcion2a">
-                     <input type="radio" name="questionOne" id="opcion2a" value="opcion2a">
-                     Opción 2
-                  </label>
-                  <label for="opcion3a">
-                     <input type="radio" name="questionOne" id="opcion3a" value="opcion3a">
-                     Opción 3
-                  </label>
+                  <legend>What tense is the text written in?</legend>
+                  <div class="style-flex">
+                     <label for="opcion1a">
+                        <input type="radio" name="questionOne" id="opcion1a" value="opcion1a">
+                        Past Simple
+                     </label>
+                     <label for="opcion2a">
+                        <input type="radio" name="questionOne" id="opcion2a" value="opcion2a">
+                        Present Continuous
+                     </label>
+                     <label for="opcion3a">
+                        <input type="radio" name="questionOne" id="opcion3a" value="opcion3a">
+                        Present Simple
+                     </label>
+                  </div>
                </fieldset>
+               <div class="question1"></div>
                <fieldset>
-                  <legend>Second Question?</legend>
-                  <label for="opcion1b1">
-                     <input type="radio" name="questionTwo" id="opcion1b" value="opcion1b">
-                     Opción 1
-                  </label>
-                  <label for="opcion2b">
-                     <input type="radio" name="questionTwo" id="opcion2b" value="opcion2b">
-                     Opción 2
-                  </label>
-                  <label for="opcion3b">
-                     <input type="radio" name="questionTwo" id="opcion3b" value="opcion3b">
-                     Opción 3
-                  </label>
+                  <legend>What did they do?</legend>
+                  <div class="style-flex">
+                     <label for="opcion1b1">
+                        <input type="radio" name="questionTwo" id="opcion1b" value="opcion1b">
+                         They danced
+                     </label>
+                     <label for="opcion2b">
+                        <input type="radio" name="questionTwo" id="opcion2b" value="opcion2b">
+                        They talked
+                     </label>
+                     <label for="opcion3b">
+                        <input type="radio" name="questionTwo" id="opcion3b" value="opcion3b">
+                        They sang
+                     </label>
+                  </div>
                </fieldset>
+               <div class="question2"></div>
                <fieldset>
-                  <legend>Third Question?</legend>
-                  <label for="opcion1c">
-                     <input type="radio" name="questionThree" id="opcion1c" value="opcion1c">
-                     Opción 1
-                  </label>
-                  <label for="opcion2c">
-                     <input type="radio" name="questionThree" id="opcion2c" value="opcion2c">
-                     Opción 2
-                  </label>
-                  <label for="opcion3c">
-                     <input type="radio" name="questionThree" id="opcion3c" value="opcion3c">
-                     Opción 3
-                  </label>
+                  <legend>Complete: It was an ______ afternoon.</legend>
+                  <div class="style-flex">
+                     <label for="opcion1c">
+                        <input type="radio" name="questionThree" id="opcion1c" value="opcion1c">
+                        Bad
+                     </label>
+                     <label for="opcion2c">
+                        <input type="radio" name="questionThree" id="opcion2c" value="opcion2c">
+                        Tiring
+                     </label>
+                     <label for="opcion3c">
+                        <input type="radio" name="questionThree" id="opcion3c" value="opcion3c">
+                        Wonderful
+                     </label>
+                  </div>
                </fieldset>
-               <label for="check">
-                  <input type="button" name="check" value="check">
+               <div class="question3"></div>
+               <label for="check" class="style-flex">
+                  <input type="submit" name="check" value="check" class="btn_blue" style="padding:0.3rem 0.5rem; cursor: pointer">
                </label>
 
             </form>
+            <!-- congrtulation - modal -->
+         <div class="modal_congratulation">
+            <p class="modal_congratulation-p">Great job!</p>
+            <!-- <img src="/images/logo/icon_logo.png" width="100px" alt=""> -->
+            <img class="modal_congratulation-img" src="/images/icons/feliz.gif" alt="">
+            <button  class="btn_green btn_next">
+               Next
+               <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+            <button class="btn_orange btn_again">
+               Try again 
+            </button>
+         
+         </div>
          </div>
          <!-- -----------------------card------------------- -->
          <div class="readcards_card">
@@ -104,18 +128,17 @@
             <h2>Previsualización</h2>
             <div class="card card-previewer">
                <div class="card_image">
-                  <img src="/images/logo/icon_logo.png" alt="imagen" id="cardImg">
+                  <img src="/images/icons/amigo.png" alt="imagen" id="cardImg">
                </div>
-               <h2 class="card_title" id="displayTitleCard">Lorem ipsum dolor sit</h2>
+               <h2 class="card_title" id="displayTitleCard">A romantic afternoon</h2>
                <div class="card_decoration decoration-top">
                   <div class="decoration_circle circle_top"></div>
                   <div class="decoration_line"></div>
                </div>
                <div class="card_text">
-                  <p id="displayTextCard">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. At, debitis cupiditate omnis
-                     repudiandae
-                     reprehenderit nulla veritatis molestias beatae.
+                  <p id="displayTextCard" style="padding: 0 2rem;">
+                     Yesterday I <span style="color:chartreuse">met</span> a person. We <span style="color:rgb(0, 238, 255)">talked</span> and  <span style="color:rgb(248, 251, 54)">laughed</span> a lot. She was a <span style="color:rgb(255, 51, 0)">lovely</span> girl . It was an excellent afternoon. <br> How is your afternoon going ?
+
                   </p>
                </div>
 
@@ -129,7 +152,8 @@
             </div>
          </div>
       </div>
-      <div class="bg_maintenance">
+      <!-- ventana de bloqueo del cuestionario -->
+      <!-- <div class="bg_maintenance">
          <p>Estamos trabajando para darle la mejor experiencia en la navegación de esta página <br> *(in maintenance)</p>
          <div>
             <img src="/images/modal/builder.png" alt="">
@@ -138,17 +162,23 @@
          <p>Ten un feliz dia y disfruta de las</p>
          <a class="style_a btn_blue" href="#readcards_topics">READCARDS</a>
       </div>
-   </section>
+   </section> -->
    <!-- ------------topics---------------s -->
    <section class="readcards_topics" id="readcards_topics">
       <h2>ChameleonCard creadas:</h2>
+      <div>
+         <button class="btn_yellow btn_desplegar">Desplegar Cards</button>
+         <div>
+            <span class="material-symbols-outlined font-size3 arrow_drop_down">arrow_drop_down</span>
+            <span class="material-symbols-outlined font-size3 arrow_drop_up">arrow_drop_up</span>
+         </div>
+      </div>
       <div class="topics_container" id="topics_container">
 
       </div>
    </section>
-
    <!-- -----------------modal--------------- -->
-   <!-- <section class="modal">
+   <section class="modal">
       <div class="modal_container">
          <h2>Inicia Sesión y accede a las SPEAKCARDS</h2>
          <button class="modal_google" id="googleLogin">
@@ -157,13 +187,21 @@
             </div>
             <div>Iniciar sesión con Google</div>
          </button>
-         <a href="#" class="modal_close" id="modal_close_readcards">cerrar</a>
+         <div class="building">
+            <p class="building_p"> Estamos trabajando para darle la mejor experiencia en la navegación de esta página <br> *(in maintenance)</p>
+            <div class="building_images">
+               <img src="/images/modal/builder.png" alt="">
+               <img src="/images/modal/dev.gif" alt="">
+            </div>
+            <p class="building_p_bottom">Ten un feliz dia y disfruta de las <br> READCARDS</p>
+         </div>
+         <a href="#" class="modal_close" id="modal_close">cerrar</a>
       </div>
-   </section> -->
+   </section>
+
 
    <script src="/script/display_mode/display_firestore.js" type="module"></script>
-   <script src="/script/hamburguer.js"></script>
-   <!--   <script src="/script/modal.js"></script> -->
+   <script src="/script/modal.js"></script>
 </body>
 
 </html>

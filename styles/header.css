@@ -5,8 +5,14 @@
    --colorWhite: rgb(255, 255, 255);
    --colorBlack: rgb(0, 0, 0);
    --colorOrange: rgb(232, 124, 74);
+   --colorGreen: rgb(128, 252, 66);
+   --colorGreen2: rgba(128, 252, 66, 0.829);
 }
 /* button blue and hover yellow */
+button, a{
+    cursor: pointer;
+    border-style: none;
+}
 .btn_blue{
     background-color: var(--colorBlue);
     border-radius: 0.8rem;
@@ -15,6 +21,15 @@
 .btn_blue:hover{
     background-color: var(--colorYellow);
     color: var(--colorBlack);
+}
+
+.btn_green{
+    background-color: var(--colorGreen);
+    border-radius: 0.8rem;
+    color: var(--colorBlack);
+}
+.btn_green:hover{
+    background-color: var(--colorGreen2);
 }
 
 /* button yellow y hover blue*/
@@ -39,6 +54,12 @@
     border-radius: 0.8rem;
     color: var(--colorWhite);
 }
+
+.style-flex{
+    display: flex;
+    gap: 1rem;
+    justify-content:space-evenly;
+}
 /*----------section separation------------ */
 .divider{
     max-width: 100vw;
@@ -61,6 +82,9 @@
     display: inline-block;
 }
 /*----------------------------------*/
+details{
+
+}
 /* -------------------------------- */
 /* ----------header-and-- nav------------- */
 .header{
@@ -184,7 +208,8 @@ a.logout{
     }
     .btn_creator.activo,
     .logout.activo{
-        display: none;
+        display: block;
+        margin-bottom: 0.5rem;
     }
     /*-----hamburguer-----*/
     .btn_humbg{

@@ -292,6 +292,8 @@ a.logout{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
 }
 /* .card_container{
     width: 100%;
@@ -305,12 +307,23 @@ a.logout{
 .method_card{
     height: 20rem;
     width: 15rem;
-    background-image: url(/images/cards/rock.png);
     background-size:contain;
     background-repeat: no-repeat;
-    transform: rotate(3deg);
     border-radius: 0.2rem;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 0.4);
 }
+
+.method_card-one{
+    background-image: url(/images/cards/rock.png);
+    transform: rotate(-1deg);
+    z-index: 10;
+}
+/* .method_card-two{
+    background-image: url(/images/cards/card_myownbussiness.png);
+    transform: rotate(10deg);
+    position: absolute;
+    
+} */
 
 /*---------------section: screen-----------------------------------*/
 section.screen{
@@ -517,6 +530,7 @@ div.gift_container{
         margin-bottom: 0.5rem;
     }
     .header_btn_idea{
+        position: static;
     }
     .header_btn_idea.activo{
        position: absolute;

@@ -25,7 +25,7 @@ inputImageCard.addEventListener('change', function(event) {
     reader.onload = function(event) {
       /* const imagePreview = document.getElementById('image-preview'); */
       
-      cardPreviewer.style.backgroundImage = `url(${event.target.result})`
+     /*  cardPreviewer.style.backgroundImage = `url(${event.target.result})` */
       cardImg.src = event.target.result;
     };
 

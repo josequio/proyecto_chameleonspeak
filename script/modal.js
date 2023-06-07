@@ -33,12 +33,14 @@ function hideModal(ev){
     modal.classList.remove("modal--show");
 };
 /*--------- */
+closeModal.addEventListener("click", hideModal);
+
 openModal.addEventListener("click",showModal);
 speakcardsModal.addEventListener("click",showModal);
 goModal.addEventListener("click",showModal);
 /*------- */
 
-closeModal.addEventListener("click", hideModal);
+
 
 /*------- */
 
